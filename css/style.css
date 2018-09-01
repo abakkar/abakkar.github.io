@@ -36,7 +36,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Playfair Display", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
@@ -156,7 +156,7 @@ figure {
             left: 0;
             right: 0;
             background-color: #2c98f0;
-            visibility: visible;
+            visibility: hidden;
             -webkit-transform: scaleX(0);
             -moz-transform: scaleX(0);
             -ms-transform: scaleX(0);
@@ -1386,7 +1386,7 @@ body.offcanvas {
   z-index: 9999;
   cursor: pointer;
   opacity: 1;
-  visibility: visible;
+  visibility: hidden;
   padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
