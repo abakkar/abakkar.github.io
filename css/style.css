@@ -213,6 +213,7 @@ figure {
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
+            visibility: visible;
             color: #2c98f0; }
 
 .container-wrap {
