@@ -69,7 +69,7 @@ figure {
 
 #colorlib-page {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   position: relative; }
 
 #colorlib-aside {
@@ -156,7 +156,7 @@ figure {
             left: 0;
             right: 0;
             background-color: #2c98f0;
-            visibility: hidden;
+            visibility: visible;
             -webkit-transform: scaleX(0);
             -moz-transform: scaleX(0);
             -ms-transform: scaleX(0);
@@ -343,7 +343,7 @@ figure {
               width: 100%; } }
 
 body.offcanvas {
-  overflow-x: hidden; }
+  overflow-x: visible; }
   body.offcanvas #colorlib-aside {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -869,7 +869,7 @@ body.offcanvas {
   .blog-entry .blog-img {
     width: 100%;
     float: left;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     z-index: 1;
     margin-bottom: 25px; }
@@ -1386,7 +1386,7 @@ body.offcanvas {
   z-index: 9999;
   cursor: pointer;
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
   padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
