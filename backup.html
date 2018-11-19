@@ -41,6 +41,8 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- External style -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -58,8 +60,9 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/about2.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Ahmed Bakkar</a></h1>
-				<span class="position">PhD | CFD/FEM specialist | Mechanical/Aerospace engineer</br>
-				                       <a href="https://www.cfdlab.mcgill.ca/" target="_blank">CFD Lab, McGill University</a></span>
+				<span class="position">PhD, CFD/FEM specialist</br> 
+				                       Mechanical/Aerospace engineer</span>
+				<span class="position"><a href="https://www.cfdlab.mcgill.ca/" target="_blank">CFD Lab, McGill University</a></span>
 				<p><a href="https://www.linkedin.com/in/aebakkar/" target="_blank"><i class="icon-linkedin2"></i></a></p>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
@@ -67,10 +70,8 @@
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="publications">Publications</a></li>
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="timeline">Timeline</a></li>
 						<li><a href="#" data-nav-section="simulations">Simulations</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
 					</ul>
@@ -100,7 +101,7 @@ Copyright&copy; <script>document.write(new Date().getFullYear());</script> All r
 					   				<div class="slider-text-inner js-fullheight">
 					   					<div class="desc">
 						   					<h2>Welcome to my personal webpage!</br>
-						   					    You can download a copy of my CV by clicking the button below.</h2>
+						   					    You can download a full copy of my CV by clicking the button below.</h2>
 											    <p><a class="btn btn-primary btn-learn" href="https://abakkar.github.io/ABakkar_resume_141119p.pdf" target="_blank" >Download CV <i class="icon-file-pdf"></i></a ></p>
 											</div>
 					   				</div>
@@ -120,8 +121,7 @@ Copyright&copy; <script>document.write(new Date().getFullYear());</script> All r
 								<div class="col-md-12">
 									<div class="about-desc">
 										<h2 class="colorlib-heading">About Me</h2>
-										<p>I’m a Postdoctoral Researcher at <strong>McGill University</strong>’s CFD Lab working with <strong><a href="https://www.cfdlab.mcgill.ca/wagdihabashi/" target="_blank">Prof. Wagdi Habashi,</a></strong>. My research focuses on <strong>multi-phase flow</strong> modeling with a special interest in droplet dynamics. I have a strong background in <strong>developing numerical methods and numerical codes</strong> within a <strong>parallel</strong> environment. I also have prior experience in <strong>HVAC</strong> system design and in the field of <strong>renewable energy</strong>.</p>
-                                                            <p>I'm interested in <strong>CFD code development</strong> and <strong>renewable energy</strong>.</p>
+										<p>I’m a Postdoctoral Researcher Fellow at <strong>McGill University</strong>’s CFD Lab working with <strong><a href="https://www.cfdlab.mcgill.ca/wagdihabashi/" target="_blank">Prof. Wagdi Habashi,</a></strong>. My research focuses on <strong>multi-phase flow</strong> modeling with a special interest in droplet dynamics. I have a strong background in <strong>developing numerical methods and numerical codes</strong> within a <strong>parallel</strong> environment. I also have prior experience in <strong>HVAC</strong> system design and in the field of <strong>renewable energy</strong>.</p>
 									</div>
 								</div>
 							</div>
@@ -156,239 +156,18 @@ Copyright&copy; <script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</section>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInRight">
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">PhD in Mechanical Enginnering </br></br> 2018: McGill University </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <p>During my PhD, I developed a <strong>2D/3D Finite-Element Multi-phase</strong> flow solver to study <strong>droplet impingement</strong>. The code was written in <strong>FORTRAN</strong> using <strong>MPI</strong>.</p>
-									            <p>A new stabilization technique for the <strong>Level-Set</strong> equation was introduced by applying the <strong>Variational Multi-Scale method</strong> to a <strong>Taylor-Galerkin</strong> expansion of the LS equation. The <strong>eXtended Finite-Element Method</strong> was used to account for the jump in transport properties across the interface with the additional degrees of freedom <strong>statically condensed</strong> maintaining the original number of DoFs.</p>
-									            <p>The thesis was co-supervised by <strong><a href="https://www.cfdlab.mcgill.ca/wagdihabashi/" target="_blank">Prof. Wagdi Habashi,</a></strong> and <strong><a href="https://www.strath.ac.uk/staff/fossatimarcodr/" target="_blank">Dr. Marco Fossati</a></strong>.
-										      <p><a class="btn btn-primary btn-learn" href="http://digitool.library.mcgill.ca/webclient/StreamGate?folder_id=0&dvs=1535914359215~277" target="_blank" >Thesis <i class="icon-file-pdf"></i></a ></p>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">M.Sc. in Mechanical Enginnering </br></br> 2011: Cairo University</a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p>My masters project investigated the possibility of utilizing a <strong>solar chimney</strong> to produce potable water. A plant configuration was proposed consisting of a solar chimney (collector and chimney) fitted with an air-washer section. </p>
-									            <p>A numerical code developed in <strong>MATLAB</strong> was used to conduct a parametric study the effects of varying plant location, incident solar energy, and plant configuration on the amount of potable water produced.</p>
-									            <p>I've also completed various courses including:</p>
-								                  <ul>
-											      <li>Turbulent flow.</li>
-												<li>Computational methods in energy.</li>
-												<li>Advanced fluid dynamics.</li>
-												<li>Heat convection.</li>
-											</ul>										      
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">B.Sc. in Mechanical Engineering </br></br> 2007: Cairo University</a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-                                                                  <p>I graduated with <strong>honours</strong> in 2007, the group graduation project also received the <strong>“Outstanding Graduation Project Award”</strong> from the American Society of Heating, Refrigerating and Air-Conditioning Engineers (<strong>ASHRAE</strong>), Cairo Chapter.</p>
-									            <p>Courses completed include:</p>
-								                  <ul>
-											      <li>Heat and mass transfer.</li>
-												<li>Combustion.</li>
-												<li>Energy efficiency and environmental protection.</li>
-												<li>Turbomachinery.</li>
-												<li>Mechanical vibration.</li>
-											</ul>
-									        </div>
-									    </div>
-									</div>
 
-
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInTop">
-							<h2 class="colorlib-heading animate-box">Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Post-doctoral Researcher </br></br> 2017 - Current: McGill University</a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <p></p>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Teaching Assistant </br></br>2012 - 2016: McGill University</br> 2009 - 2011: Cairo University</a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p></p>									      
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Junior Mechanical Design Engineer </br></br> 2008 - 2009: WS Atkins, PLC</br> 2007 - 2008: Dar Al Handasah, Shair and partners</a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-                                                                  <p></p>
-									        </div>
-									    </div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section class="colorlib-experience" data-section="publications">
+	            <section class="colorlib-skills" data-section="skills">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Publications</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+							<h2 class="colorlib-heading animate-box">Skills</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
-					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-			
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
-								<h3>Photoshop</h3>
+								<h3>Multi-phase flows</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
 								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
@@ -399,31 +178,44 @@ Copyright&copy; <script>document.write(new Date().getFullYear());</script> All r
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="progress-wrap">
-								<h3>jQuery</h3>
+								<h3>FEM/xFEM/FEA</h3>
 								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								    <span>60%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
 								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
 								    <span>85%</span>
 								  	</div>
 								</div>
 							</div>
 						</div>
+						
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="progress-wrap">
-								<h3>CSS3</h3>
+								<h3>FVM, FDM</h3>
 								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>MPI parallel coding</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>FORTRAN</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
 								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
 								    <span>90%</span>
 								  	</div>
@@ -432,27 +224,198 @@ Copyright&copy; <script>document.write(new Date().getFullYear());</script> All r
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
-								<h3>WordPress</h3>
+								<h3>C, C++, Python</h3>
 								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="50"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
 								  	</div>
 								</div>
 							</div>
 						</div>
+												
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="progress-wrap">
-								<h3>SEO</h3>
+								<h3>English, Arabic</h3>
 								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+								    <span>100%</span>
 								  	</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>French</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
+				</div>
+			</section>
+			
+			
+			<section class="colorlib-timeline" data-section="timeline">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading animate-box">Timeline</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+				         
+				         
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+                                               <i class="glyphicon glyphicon-briefcase" style="color:white;"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Postdoctoral Research Fellow</a> </br>
+					                            <span>01. 2018 - Current</br>
+					                                  CFD Lab, McGill University</br>
+					                                  Montréal, QC, Canada</span></h2>
+								           <ul>
+										<li>Develop research plans in collaboration with industry.</li>
+										<li>Estimate research timelines and ensure delivery deadlines are met.</li>
+										<li>Write grant applications and assist in managing research budget.</li>
+										<li>Manage graduate students in the following research areas: <strong>fluid-structure interaction</strong> using <strong>XFEM</strong>, <strong>smoothed particle hydrodynamics</strong> for <strong>droplet dynamics</strong>, gappy <strong>reduced order modelling</strong> for <strong>data reconstruction</strong>, and <strong>ice accretion</strong> and <strong>shedding tools</strong> for <strong>helicopters</strong>.</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+                                               <i class="glyphicon glyphicon-education" style="color:white;"></i>
+					               </div>
+
+                                             <div class="timeline-label">
+					                  <h2><a href="#">Doctor of Philosophy in Mechanical Engineering</a> </br>
+					                            <span>09. 2011 - 02. 2018</br>
+					                                  McGill University</br>
+					                                  Montréal, QC, Canada</span></h2>
+								           <ul>
+								            <li>Supervisors: <strong><a href="https://www.cfdlab.mcgill.ca/wagdihabashi/" target="_blank">Prof. Wagdi Habashi,</a></strong>, and <strong><a href="https://www.strath.ac.uk/staff/fossatimarcodr/" target="_blank">Dr. Marco Fossati.</a></strong></li>
+										<li>Introduced a novel approach improving the conservation characteristics of the Level-Set method.</li>
+										<li>Developed a general multi-phase numerical framework in Fortran using MPI.</li>
+										<li>Conducted a preliminary parametric study into supercooled large droplet impingement.</li>
+									      <li>Teaching Assistant for: <strong>Thermodynamics I</strong> (MECH 240), <strong>Mechanical Laboratories I</strong> (MECH 362), <strong>Turbomachinery and Propulsion</strong> (MECH 535) and <strong>Finite-Element methods in Computational Fluid Dynamics</strong> (MECH 661).</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+                                               <i class="glyphicon glyphicon-education" style="color:white;"></i>
+					               </div>
+
+                                             <div class="timeline-label">
+					                  <h2><a href="#">Master of Science in Mechanical Engineering</a> </br>
+					                            <span>06. 2009 - 08. 2011</br>
+					                                  Cairo University</br>
+					                                  Giza, Egypt</span></h2>
+								           <ul>
+								            <li>Supervisor: Prof. <strong>Abdalla Hanafi.</strong></li>
+										<li>Developed a numerical model for a novel desalination plant using the <strong>Solar Chimney</strong> in <strong>MATLAB</strong>.</li>
+										<li>Conducted a <strong>feasibility study</strong> for the proposed plant.</li>
+									      <li>Teaching Assistant for: <strong>Powerplant Systems Design</strong> and <strong>Fundamentals of Heat Transfer</strong>.</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>
+					         
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+                                               <i class="glyphicon glyphicon-briefcase" style="color:white;"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Mechanical Design Engineer</a> </br>
+					                            <span>11. 2008 - 03. 2009</br>
+					                                  WS ATKINS</br>
+					                                  SHARJAH, UAE</span></h2>
+								           <ul>
+										<li>Conducted a preliminary study into using <strong>natural ventilation</strong> for a <strong>LEED</strong> project.</li>
+										<li>Reviewed and adjusted <strong>thermal load</strong> (<strong>HAP</strong>) calculations for smoke clearance system.</li>
+										<li>Responded to <strong>RFI</strong>s from contractor.</li>
+										<li>Performed detailed thermal load (<strong>HAP</strong>) calculations for the various projects.</li>
+										<li>Coordinated design issues with the various in-house departmental teams.</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>					         
+					         
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+                                               <i class="glyphicon glyphicon-briefcase" style="color:white;"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Junior Mechanical Design Engineer</a> </br>
+					                            <span>09. 2007 - 10. 2008</br>
+					                                  Dar Al-Handasah</br>
+					                                  Giza, Egypt</span></h2>
+								           <ul>
+										<li>Participated in <strong>meetings with client</strong> and in-house teams to negotiate designs issues.</li>
+										<li>Responsible for <strong>hospital room pressurization</strong> in accordance with building standards.</li>
+										<li>Conducted thermal load (<strong>HAP</strong>) calculations and system designs for various projects.</li>
+										<li>Reviewed plumbing system design and calculations for a residential project.</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>
+					         
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+                                               <i class="glyphicon glyphicon-education" style="color:white;"></i>
+					               </div>
+
+                                             <div class="timeline-label">
+					                  <h2><a href="#">Bachelor of Science in Mechanical Engineering</a> </br>
+					                            <span>09. 2002 - 06. 2007</br>
+					                                  Cairo University</br>
+					                                  Giza, Egypt</span></h2>
+								           <ul>
+								            <li>Graduated with <strong>Honors</strong>, ranked top 2%.</li>
+									     </ul>	
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					         
+					      </div>
+					   </div>
+				   </div>
 				</div>
 			</section>
 
